@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Softtek - Chatbot</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="chatbot.html">BEL</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/home.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/perfil.html">Perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/chamados.html">Chamados</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../pages/sobre.html">Sobre o Projeto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="hero hero-bot">
+      <div class="hero-content">
+        <h1>Conheça o nosso ChatBot</h1>
+        <p>
+          Precisa de ajuda? Converse com o nosso chatbot agora para obter
+          assistência personalizada e rápida. Estamos aqui para ajudar você.
+        </p>
+      </div>
+    </section>
+
+    <div class="container mt-5 d-flex flex-column align-items-center">
+      <div class="card-ajuda card mb-5" style="width: 100%; max-width: 600px">
+        <div class="row g-0">
+          <div class="col-md-8 d-flex align-items-center">
+            <div class="card-body">
+              <h5 class="card-title">Como usar o ChatBot?</h5>
+              <p class="card-text">
+                Digite sua pergunta no campo de chat e clique em 'Enviar'. Nosso
+                bot foi treinado para fornecer a melhor resposta possível,
+                ajudando você rapidamente.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <img
+              src="../images/432038.png"
+              class="img-fluid rounded-end"
+              alt="Imagem do Card"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="card p-4 chat-card" style="width: 100%; max-width: 800px">
+        <div class="card-header">
+          <h3>BEL - ASSISTENTE VIRTUAL</h3>
+        </div>
+        <div id="chat-window" class="border p-3 mb-3"></div>
+        <form id="chat-form">
+          <div class="input-group">
+            <input
+              type="text"
+              id="user-input"
+              class="form-control"
+              placeholder="Digite sua mensagem..."
+              required
+            />
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy; 2024 AssistAI. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../scripts/script.js"></script>
+  </body>
+</html>
